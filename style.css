@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif !important;
+}
+
+html {
+  font-size: 18px;
+}
+.carousel-caption {
+  margin-bottom: 30vh;
+}
+
+body.modal-open div.modal-backdrop {
+  z-index: 1;
+}
+.footer li {
+  padding: 0 7px;
+  margin-bottom: 10px;
+}
+ul {
+  list-style: none;
+}
+.active {
+  text-decoration: underline !important;
+}
+.navbar-toggler {
+  box-shadow: none !important;
+}
