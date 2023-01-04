@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+<head>
+<title>Mount Fuji</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" type="text/css">
+<script type="text/javascript" src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body style="background-color: white;">
+
+  <nav class="navbar fixed-top" style="background-color:#96ABCD;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="homepage.html" style="color:white;"><h2>Mount Fuji</h2></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#introduction" style="color: white;">Introduction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="characters.html" style="color: white;">Characters</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" style="color: white;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Related Links
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" style="color: rgb(75, 75, 75);">Facebook</a></li>
+              <li><a class="dropdown-item" href="#" style="color: rgb(75, 75, 75);">Instagram</a></li>
+              <li><hr class="dropdown-divider" style="border-color:#96ABCD;"></li>
+              <li><a class="dropdown-item" href="#" style="color: rgb(75, 75, 75);">Login</a></li>
+            </ul>
+          </li>
+        </ul>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Mount Fuji Team" style="background-color:white; border-color:white; color:#96ABCD;">
+Contact us</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index: 1050;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Recipient</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Message</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" style="background-color:#96ABCD; border-color:#96ABCD;">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="liner" style="height: 20px;"></div>
+
+<form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit" style="background-color:white; border-color:white; color:#96ABCD;">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<div class="liner" style="height: 150px;"></div>
+
+<script>
+const exampleModal = document.getElementById('exampleModal')
+exampleModal.addEventListener('show.bs.modal', event => {
+  // Button that triggered the modal
+  const button = event.relatedTarget
+  // Extract info from data-bs-* attributes
+  const recipient = button.getAttribute('data-bs-whatever')
+  // If necessary, you could initiate an AJAX request here
+  // and then do the updating in a callback.
+  //
+  // Update the modal's content.
+  const modalTitle = exampleModal.querySelector('.modal-title')
+  const modalBodyInput = exampleModal.querySelector('.modal-body input')
+
+  modalTitle.textContent = `New message to ${recipient}`
+  modalBodyInput.value = recipient
+})
+</script>
+
+</body>
+</html>
