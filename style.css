@@ -8,9 +8,6 @@
 html {
   font-size: 18px;
 }
-.carousel-caption {
-  margin-bottom: 30vh;
-}
 
 body.modal-open div.modal-backdrop {
   z-index: 1;
